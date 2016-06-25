@@ -1,5 +1,5 @@
 {
-  "name": "ingredient-to-recipe",
+  "name": "web-app-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
-    "path": "^0.12.7"
+    "express-session": "^1.13.0",
+    "path": "^0.12.7",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "require-directory": "^2.1.1",
+    "rethinkdb": "^2.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-exit": "0.0.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.8"
   }
 }

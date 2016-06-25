@@ -1,3 +1,4 @@
 {
-	"port-listen": 10000
+    "port-listen": 44444,
+    "backendPath": "/backend"
 }
