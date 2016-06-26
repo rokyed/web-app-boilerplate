@@ -1,4 +1,41 @@
 {
     "port-listen": 44444,
-    "backendPath": "/backend"
+    "backendPath": "/backend",
+    "database": {
+        "user": "admin",
+        "password": "",
+        "databaseName": "myDb",
+        "host": "localhost",
+        "port": 28015
+    },
+    "userCreate": {
+        "requiredFields": ["username", "password", "password_confirm","first_name","last_name","email"],
+        "savedFields": ["username", "password", "first_name","last_name","email"],
+        "dbDupVerification": "username",
+        "idFromVariable": "username",
+        "fieldsValidation": {
+            "username": {
+                "minLength": 6,
+                "maxLength": 30
+            },
+            "password": {
+                "minLength": 6,
+                "maxLength": 30,
+                "equalsTo": "password_confirm"
+            },
+            "first_name": {
+                "minLength": 0,
+                "maxLength": 30
+            },
+            "last_name": {
+                "minLength": 0,
+                "maxLength": 30
+            },
+            "email": {
+                "minLength": 6,
+                "maxLength": 255,
+                "isEmail": true
+            },
+        }
+    }
 }

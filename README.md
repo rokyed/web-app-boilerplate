@@ -3,7 +3,7 @@
 
 ### Requirements:
 
-nodejs, browserify, babelify
+nodejs, browserify, babelify, rethinkdb
 
 
 ### Initial setup:
